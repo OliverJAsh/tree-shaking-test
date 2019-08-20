@@ -1,4 +1,5 @@
-import * as other from "./other";
+// import * as other from "./other";
+import { other } from "./proxy";
 
 console.log(other.foo1);
 
