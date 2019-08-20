@@ -1,5 +1,5 @@
 ```bash
 webpack
-# Inspect output
+# Inspect output, look for "unused harmony export"
 code ./target/index.js
 ```

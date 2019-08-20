@@ -1,4 +1,5 @@
 {
+  "sideEffects": false,
   "dependencies": {
     "fp-ts": "^2.0.5",
     "webpack": "^4.39.2",
