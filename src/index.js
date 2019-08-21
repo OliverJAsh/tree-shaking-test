@@ -1,3 +1,3 @@
-import { other } from "./proxy";
+import { other } from "./other";
 
 console.log(other.foo1);
