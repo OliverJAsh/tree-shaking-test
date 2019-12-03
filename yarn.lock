@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@devexperts/remote-data-ts@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@devexperts/remote-data-ts/-/remote-data-ts-2.0.1.tgz#64ed9defae2bd64ee51ad58ba33f2044fcb4cbaf"
+  integrity sha512-4CwxcOzewUMSehDwNyq3UWFsrENHs4b3OrzZmkXkcmBcVvgRuf3mDDe9WNZjJqCOl5qjntypbmp1vPMW8hmG3w==
+  dependencies:
+    fp-ts "^2.0.0"
+    io-ts "^2.0.0"
+    io-ts-types "^0.5.0"
+    tslib "^1.9.3"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -1017,6 +1027,11 @@ for-in@^1.0.2:
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
 
+fp-ts@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.2.0.tgz#7a442c6389e9b8424a5deb55eb099a8840072f4a"
+  integrity sha512-muJL9NOYluuoRezrvOyQvLAHIXrYg7u/Tc6cu4PP/Ed4TJKrm6BVSX8H1goT/4nhgP/yQ+Z4Xjjt4ijeKFX4Ng==
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -1311,6 +1326,16 @@ invert-kv@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
   integrity sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
+
+io-ts-types@^0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/io-ts-types/-/io-ts-types-0.5.2.tgz#ff884926678a0418d36eb85045b0cf014698e554"
+  integrity sha512-ebIXH/Pf7IC/M4qa5wnQecJCs6MXZMZWaiZNWNzEP7tw+Hl8wapAI/tzBXn1LSGrpkVe0NIsFeL7yy6Byi3h+g==
+
+io-ts@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-2.0.1.tgz#1261c12f915c2f48d16393a36966636b48a45aa1"
+  integrity sha512-RezD+WcCfW4VkMkEcQWL/Nmy/nqsWTvTYg7oUmTGzglvSSV2P9h2z1PVeREPFf0GWNzruYleAt1XCMQZSg1xxQ==
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -2657,7 +2682,7 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-tslib@^1.9.0:
+tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==

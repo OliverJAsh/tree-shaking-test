@@ -1,6 +1,7 @@
 {
   "sideEffects": false,
   "dependencies": {
+    "@devexperts/remote-data-ts": "^2.0.1",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   }
