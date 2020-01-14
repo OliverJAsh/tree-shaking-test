@@ -1,6 +1,6 @@
 export const identity = x => x;
 
-const pipeable = I => {
+const myFunction = I => {
   const r = {};
   if (typeof I.map === "function") {
     r.map = () => {};
@@ -8,5 +8,4 @@ const pipeable = I => {
   return r;
 };
 
-const ord = {};
-export const contramap = pipeable(ord).contramap;
+const result = /*#__PURE__*/ myFunction({});
