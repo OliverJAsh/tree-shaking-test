@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@devexperts/remote-data-ts@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@devexperts/remote-data-ts/-/remote-data-ts-2.0.1.tgz#64ed9defae2bd64ee51ad58ba33f2044fcb4cbaf"
-  integrity sha512-4CwxcOzewUMSehDwNyq3UWFsrENHs4b3OrzZmkXkcmBcVvgRuf3mDDe9WNZjJqCOl5qjntypbmp1vPMW8hmG3w==
-  dependencies:
-    fp-ts "^2.0.0"
-    io-ts "^2.0.0"
-    io-ts-types "^0.5.0"
-    tslib "^1.9.3"
-
 "@rollup/plugin-node-resolve@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-7.0.0.tgz#cce3826df801538b001972fbf9b6b1c22b69fdf8"
@@ -1077,7 +1067,7 @@ for-in@^1.0.2:
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
 
-fp-ts@^2.0.0:
+fp-ts@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.4.0.tgz#087864607d5cc130a6427220a77096d4592baddc"
   integrity sha512-o96pqlRq4YB0dZpnInHrz6O6jHWTf+jDIpY6vsM/ZxAPfOhW9gl9ng62wfyhFHFeH+Ldn2/zOF32xbR2O+/MEw==
@@ -1376,16 +1366,6 @@ invert-kv@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
   integrity sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
-
-io-ts-types@^0.5.0:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/io-ts-types/-/io-ts-types-0.5.5.tgz#31df3fc14a1295d48e36d164f8399f755f750dad"
-  integrity sha512-REkSSrgkfxFzDy32dsrPiQqGERO2o4KUtSox96B4ZKFSiB5mg0zl4cXl072TvROzcvuc0zGPlFzrRTYWaTcj/w==
-
-io-ts@^2.0.0:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/io-ts/-/io-ts-2.0.4.tgz#5e07ce63a1ee484dc680e9e2a2414e0a6c503c93"
-  integrity sha512-GqCi13q6FFWbHZa6a+Aza6pJ66OqfYvEQwZyvKbKs21bez207NEQWhXH43JvwYIFk6R7rYidG8p/xqTYzvX2tQ==
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -2758,7 +2738,7 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
