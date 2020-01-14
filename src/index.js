@@ -1,7 +1,9 @@
-import * as other from "./other";
+import * as other from "@devexperts/remote-data-ts";
+// TODO: toggle foo
+// import * as other from "@devexperts/remote-data-ts/es6/remote-data";
 
-console.log(other.foo1);
+console.log(other.map);
 
-// import { foo1 } from "./other";
+// import { map } from "@devexperts/remote-data-ts";
 
-// console.log(foo1);
+// console.log(map);

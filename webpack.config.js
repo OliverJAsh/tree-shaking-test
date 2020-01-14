@@ -19,6 +19,13 @@ const config = {
   output: {
     path: TARGET_PATH,
     filename: OUTPUT_FILENAME
+  },
+  resolve: {
+    alias: {
+      "fp-ts/lib": "fp-ts/es6",
+      // TODO: toggle foo
+      "io-ts-types/lib": "io-ts-types/es6"
+    }
   }
 };
 
