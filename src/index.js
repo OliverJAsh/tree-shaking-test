@@ -1,9 +1,5 @@
-import * as other from "@devexperts/remote-data-ts";
-// TODO: toggle foo
-// import * as other from "@devexperts/remote-data-ts/es6/remote-data";
-
-console.log(other.map);
-
-// import { map } from "@devexperts/remote-data-ts";
-
-// console.log(map);
+// import * as f from "fp-ts/lib/Ord";
+// console.log(f.max);
+import { max } from "fp-ts/lib/Ord";
+console.log(max);
+// import "fp-ts/lib/Ord";

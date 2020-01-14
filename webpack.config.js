@@ -22,9 +22,7 @@ const config = {
   },
   resolve: {
     alias: {
-      "fp-ts/lib": "fp-ts/es6",
-      // TODO: toggle foo
-      "io-ts-types/lib": "io-ts-types/es6"
+      "fp-ts/lib": "fp-ts/es6"
     }
   }
 };
