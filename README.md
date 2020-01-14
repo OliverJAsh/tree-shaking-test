@@ -8,4 +8,5 @@ code ./target/index.js
 
 ```bash
 rollup -c rollup.config.js
+code ./target/rollup.js
 ```
