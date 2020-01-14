@@ -9,3 +9,4 @@ const myFunction = I => {
 };
 
 const result = /*#__PURE__*/ myFunction({});
+const map = result.map;
