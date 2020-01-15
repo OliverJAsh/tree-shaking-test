@@ -1,0 +1,31 @@
+diff --git a/node_modules/fp-ts/es6/Ord.js b/node_modules/fp-ts/es6/Ord.js
+index c6d925d..438bf26 100644
+--- a/node_modules/fp-ts/es6/Ord.js
++++ b/node_modules/fp-ts/es6/Ord.js
+@@ -137,8 +137,8 @@ export function getSemigroup() {
+ }
+ const M = {
+     // tslint:disable-next-line: deprecation
+-    concat: getSemigroup().concat,
+-    empty: fromCompare(() => 0)
++    concat: /*#__PURE__*/(() => getSemigroup().concat)(),
++    empty: /*#__PURE__*/fromCompare(() => 0)
+ };
+ /**
+  * Returns a `Monoid` such that:
+@@ -245,7 +245,8 @@ export const ord = {
+     URI,
+     contramap: (fa, f) => fromCompare((x, y) => fa.compare(f(x), f(y)))
+ };
+-const { contramap } = pipeable(ord);
++const pipeableResult = /*#__PURE__*/pipeable(ord);
++const contramap = /*#__PURE__*/(() => pipeableResult.contramap)();
+ export { 
+ /**
+  * @since 2.0.0
+@@ -254,4 +255,4 @@ contramap };
+ /**
+  * @since 2.0.0
+  */
+-export const ordDate = ord.contramap(ordNumber, date => date.valueOf());
++export const ordDate = /*#__PURE__*/ord.contramap(ordNumber, date => date.valueOf());

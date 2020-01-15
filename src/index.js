@@ -1,2 +1,2 @@
-import { identity } from "./test";
-console.log(identity);
+import { max } from 'fp-ts/es6/Ord'
+console.log(max)
