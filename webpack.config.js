@@ -1,24 +1,37 @@
 const pathHelpers = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
-// Expect `__dirname` to be `/config/target/`.
-const ROOT_PATH = __dirname;
-const TARGET_PATH = pathHelpers.join(ROOT_PATH, "./target/");
-const SRC_PATH = pathHelpers.join(ROOT_PATH, "./src/");
-
-const ENTRY_FILENAME = "index.js";
-const OUTPUT_FILENAME = "index.js";
+// [1] Tree shaking
 
 const config = {
-  mode: "development",
+  // We override the default (`eval-source-map`) so that the output code is not wrapped in eval.
   devtool: "source-map",
+  mode: "development",
   optimization: {
-    usedExports: true
+    // [1] Step 1: drop references to unused exports, so they can be remove by dead code elimination.
+    usedExports: true,
+    sideEffects: true,
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          mangle: false,
+
+          compress: {
+            defaults: false,
+
+            // [1] Step 2: dead code elimination.
+            dead_code: true,
+            unused: true
+          }
+        }
+      })
+    ]
   },
-  // mode: "production",
-  entry: pathHelpers.resolve(SRC_PATH, ENTRY_FILENAME),
+  entry: pathHelpers.join(__dirname, "./src/index.js"),
   output: {
-    path: TARGET_PATH,
-    filename: OUTPUT_FILENAME
+    path: pathHelpers.join(__dirname, "./target"),
+    filename: "webpack.js"
   }
 };
 

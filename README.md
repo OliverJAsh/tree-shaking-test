@@ -1,5 +1,11 @@
 ```bash
-webpack
-# Inspect output, look for "unused harmony export"
-code ./target/index.js
+webpack && prettier --write ./target/webpack.js
+# Inspect output
+code ./target/webpack.js
+```
+
+```bash
+rollup -c ./rollup.config.js
+# Inspect output
+code ./target/rollup.js
 ```

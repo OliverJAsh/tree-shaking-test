@@ -1,6 +1,7 @@
 {
-  "sideEffects": false,
   "dependencies": {
+    "prettier": "^1.19.1",
+    "rollup": "^1.29.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   }
