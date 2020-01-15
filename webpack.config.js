@@ -5,7 +5,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 const config = {
   // We override the default (`eval-source-map`) so that the output code is not wrapped in eval.
-  devtool: "source-map",
+  devtool: false,
   mode: "development",
   optimization: {
     // [1] Step 1: drop references to unused exports, so they can be remove by dead code elimination.
