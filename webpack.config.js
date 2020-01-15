@@ -1,6 +1,6 @@
 const pathHelpers = require("path");
 
-// Expect `__dirname` to be `/config/target/`.
+// Expect `__dirname` to be `/`.
 const ROOT_PATH = __dirname;
 const TARGET_PATH = pathHelpers.join(ROOT_PATH, "./target/");
 const SRC_PATH = pathHelpers.join(ROOT_PATH, "./src/");
