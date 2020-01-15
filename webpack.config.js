@@ -15,11 +15,6 @@ const config = {
   output: {
     path: TARGET_PATH,
     filename: OUTPUT_FILENAME
-  },
-  resolve: {
-    alias: {
-      "fp-ts/lib": "fp-ts/es6"
-    }
   }
 };
 
