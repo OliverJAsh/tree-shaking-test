@@ -1,2 +1,2 @@
-import { identity } from "./test";
-console.log(identity);
+import { createHash } from 'crypto';
+createHash
