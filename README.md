@@ -1,5 +1,5 @@
 ```bash
-webpack && prettier --write ./target/webpack.js
+webpack
 # Inspect output
 code ./target/webpack.js
 ```

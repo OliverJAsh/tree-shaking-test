@@ -8,9 +8,8 @@ const config = {
       new TerserPlugin({
         terserOptions: {
           mangle: false,
-          compress: {
-            defaults: false,
-            unused: true,
+          output: {
+            beautify: true,
           },
         },
       }),
