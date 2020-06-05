@@ -4,7 +4,17 @@ const TerserPlugin = require("terser-webpack-plugin");
 const config = {
   mode: "production",
   optimization: {
-    minimizer: [new TerserPlugin({ terserOptions: { mangle: false } })]
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          mangle: false,
+          compress: {
+            defaults: false,
+            unused: true,
+          },
+        },
+      }),
+    ],
   },
   entry: pathHelpers.join(__dirname, "./src/index.js"),
   output: {
