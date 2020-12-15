@@ -1,3 +1,3 @@
-import * as StatusCodes from "http-status-codes/build/es/status-codes";
+import { StatusCodes } from "http-status-codes";
 console.log(StatusCodes.ACCEPTED);
 console.log(StatusCodes.BAD_GATEWAY);
