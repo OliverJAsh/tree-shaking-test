@@ -2,7 +2,7 @@
   "dependencies": {
     "http-status-codes": "2.1.5-beta.1",
     "prettier": "^1.19.1",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "webpack": "^5.10.2",
+    "webpack-cli": "^4.2.0"
   }
 }
