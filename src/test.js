@@ -1,14 +1,8 @@
-export const unused = 1;
-
-export const identity = x => x;
-
-const myFunction = I => {
-  const r = {};
-  if (typeof I.map === "function") {
-    r.map = () => {};
-  }
-  return r;
+function Iso() {}
+Iso.prototype.reverse = function() {
+    return new Iso();
 };
 
-const result = /*#__PURE__*/ myFunction({});
-const map = result.map;
+export const iso = /*#__PURE__*/ new Iso();
+
+export const foo = 1;

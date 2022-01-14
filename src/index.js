@@ -1,2 +1,3 @@
-import { identity } from "./test";
-console.log(identity);
+import * as M from "./test";
+
+console.log(M.foo);
