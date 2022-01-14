@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "fp-ts": "^2.11.7",
+    "fp-ts-std": "^0.13.0",
+    "monocle-ts": "^2.3.11",
+    "newtype-ts": "^0.3.4",
     "prettier": "^1.19.1",
     "rollup": "^1.29.0",
     "webpack": "^5.66.0",
