@@ -4,18 +4,22 @@ const TerserPlugin = require("terser-webpack-plugin");
 const config = {
     mode: "production",
 
-    // optimization: {
-    //   minimizer: [
-    //     new TerserPlugin({
-    //       terserOptions: {
-    //         mangle: false,
-    //         output: {
-    //           beautify: true,
-    //         },
-    //       },
-    //     }),
-    //   ],
-    // },
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    // https://cs.github.com/webpack/webpack/blob/753fdea847fafe2f1a7e1cb2324e5f7cafa63c83/lib/config/defaults.js#L1127
+                    compress: {
+                        passes: 2,
+                    },
+                    mangle: false,
+                    output: {
+                        beautify: true,
+                    },
+                },
+            }),
+        ],
+    },
 
     // mode: "development",
     // optimization: {
