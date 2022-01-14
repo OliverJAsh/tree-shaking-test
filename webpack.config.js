@@ -8,10 +8,13 @@ const config = {
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
+                    // BEGIN DEFAULTS
                     // https://cs.github.com/webpack/webpack/blob/753fdea847fafe2f1a7e1cb2324e5f7cafa63c83/lib/config/defaults.js#L1127
                     compress: {
                         passes: 2,
                     },
+                    // END DEFAULTS
+
                     mangle: false,
                     output: {
                         beautify: true,
