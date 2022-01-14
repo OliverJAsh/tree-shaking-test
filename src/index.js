@@ -1,3 +1,3 @@
-import * as Date from "fp-ts-std/Date";
+import * as M from "newtype-ts";
 
-console.log(Date.fromMilliseconds);
+console.log(M.getField);
